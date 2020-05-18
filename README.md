@@ -11,16 +11,16 @@ EXPLANATION OF THE CODE
 The file contains the following sections:
 •	Declaration section
       This section   contains entries that:
-	Includes standard I/O header file
-	Declarations for any variables or constants used in other parts of the grammar file
+	->Includes standard I/O header file
+	->Declarations for any variables or constants used in other parts of the grammar file
 •	Rule section
     The rule section defines the rules that parse the input stream .
-	%token-Lists the tokens which comes from lex tool with their type
+->%token-Lists the tokens which comes from lex tool with their type
 •	Program section
        The program section contains the following subroutines:
-	main : The required main program that calls the yyparse subroutines to start the program
-	yyerror(str) : The error-handling subroutine only prints a syntax error message.It uses the variable ln to print the line number where the error has occurred.
-	File *yyin : Input file for lex program and defaults to stdin
+->	main : The required main program that calls the yyparse subroutines to start the program
+->	yyerror(str) : The error-handling subroutine only prints a syntax error message.It uses the variable ln to print the line number where the error has occurred.
+->File *yyin : Input file for lex program and defaults to stdin
 If the input statement is as per the defined productions then the program prints “Program compiled successfully “ message with the number of keywords, identifiers, separators and operators.If the given input is syntactically incorrect, the program prints “Error at line (the line number where the error has occurred)” along with the message “syntax error”.
 
 
